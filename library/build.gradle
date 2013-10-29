@@ -1,0 +1,45 @@
+group = 'com.viewpagerindicator'
+version = '2.4.2-SNAPSHOT'
+
+description = 'ViewPagerIndicator'
+
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:0.6.+'
+  }
+}
+
+apply plugin: 'android-library'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'com.android.support:support-v4:18.0.+'
+}
+
+android {
+  compileSdkVersion 18
+  buildToolsVersion '18.1'
+
+  defaultConfig {
+    minSdkVersion 4
+    targetSdkVersion 18
+  }
+
+  sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+}

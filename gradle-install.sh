@@ -1,0 +1,2 @@
+gradle -b library/build.gradle build
+mvn install:install-file -Dfile=library/build/libs/library-2.4.2-SNAPSHOT.aar -DgroupId=com.viewpagerindicator -DartifactId=library -Dversion=2.4.2-SNAPSHOT -Dpackaging=aar
